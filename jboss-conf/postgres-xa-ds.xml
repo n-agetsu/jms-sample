@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- for test. Don't use production -->
+<datasources>
+  <xa-datasource>
+    <jndi-name>PostgresDS</jndi-name>
+    <track-connection-by-tx>true</track-connection-by-tx> 
+    <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+    <xa-datasource-property name="ServerName">localhost</xa-datasource-property>
+    <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+    <xa-datasource-property name="DatabaseName">test</xa-datasource-property>
+    <xa-datasource-property name="User">postgres</xa-datasource-property>
+    <xa-datasource-property name="Password">postgres</xa-datasource-property>
+    <min-pool-size>20</min-pool-size>
+    <max-pool-size>20</max-pool-size>
+    <idle-timeout-minutes>0</idle-timeout-minutes>
+    <metadata>
+       <type-mapping>PostgreSQL</type-mapping>
+    </metadata>
+  </xa-datasource>
+</datasources>
